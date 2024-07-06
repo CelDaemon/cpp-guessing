@@ -54,6 +54,5 @@ int main() {
         cout << "The correct number was: " << num << endl;
     }
     cout << "Press any key to continue: ";
-    cin.ignore();
-    cin.get();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
