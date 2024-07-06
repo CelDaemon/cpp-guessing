@@ -29,7 +29,7 @@ int main() {
     while(true) {
         cout << "What is your guess?: ";
         string guess_string;
-        cin >> guess_string;
+        getline(cin, guess_string);
         const auto guess = parse_number(guess_string);
         if(!guess || guess < 1 || guess > 100) {
             cout << "That was not a valid guess, please guess a number between 1 and 100" << endl;
